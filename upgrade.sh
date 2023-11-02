@@ -10,10 +10,10 @@ fi
 rm -f /etc/apt/sources.list.d/pve-enterprise.list
 
 # Add 7.x repo into update list
-echo "deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription" >> /etc/apt/sources.list.d/pve-install-repo.list
+echo "deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription" >>/etc/apt/sources.list.d/pve-install-repo.list
 
 # Get release key
-wget -q http://download.proxmox.com/debian/proxmox-release-bullseye.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg
+wget -q http://download.proxmox.com/debian/proxmox-release-bookworm.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bookworm.gpg
 
 # Update & Upgrade
 apt update && apt dist-upgrade -y
@@ -24,4 +24,3 @@ if [ $? -eq 0 ]; then
 else
     echo "Update or upgrade encountered an error."
 fi
-

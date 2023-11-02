@@ -14,9 +14,9 @@ Problem: TASK ERROR: command 'apt-get update' failed: exit code 100
 
 &nbsp;
 
-- Using Enviroment : 7.x
+- Using Enviroment : 8.x
 
-- 使用的 PVE 環境 : 7.x
+- 使用的 PVE 環境 : 8.x
 
 &nbsp;
 
@@ -26,6 +26,3 @@ Problem: TASK ERROR: command 'apt-get update' failed: exit code 100
 >如果你的版本高於或低於 7.x 請參照Proxmox 官方文件來更新(你需要依據 PVE 版本替換 Release key 和 Download 的連結)
   - [更新版本步驟](https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Stretch)
   - [Proxmox 套件版本](https://pve.proxmox.com/wiki/Package_Repositories)
-
-If you have any problem please feel free to submit a pull request  
-如果你有任何問題 歡迎發PR ：）
